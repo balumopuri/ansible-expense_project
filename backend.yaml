@@ -62,7 +62,7 @@
       login_host: mysql.balaportfolio.space
       target: /app/schema/backend.sql
 
-  - name: deamon reload and restart service
+  - name: daemon reload and restart service
     ansible.builtin.systemd_service:
       enable: true
       state: restarted
