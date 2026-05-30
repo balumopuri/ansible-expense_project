@@ -39,7 +39,7 @@
 
   - name: restart service
     ansible.builtin.systemd_service:
-      name: frontend
+      name: nginx
       enabled: true
       state: restarted
     
