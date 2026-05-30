@@ -9,6 +9,7 @@
     ansible.builtin.systemd_service:
       enabled: yes
       state: started
+      name: nginx
 
   - name: remove the defualt conent in the server
     ansible.builtin.file:
