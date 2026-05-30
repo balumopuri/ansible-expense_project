@@ -36,7 +36,7 @@
       src: expense.config
       dest: /etc/nginx/default.d/expense.conf 
 
-- name: restart service
+  - name: restart service
   ansible.builtin.systemd_service:
     name: frontend
     enabled: true
